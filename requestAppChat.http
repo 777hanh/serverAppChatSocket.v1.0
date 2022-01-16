@@ -1,0 +1,41 @@
+####
+Post http://localhost:5000/api/conversation/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjEiLCJpYXQiOjE2NDIyNTA2MjZ9.ih81_x2I0EXMB4Diyky2pVCkxr7MndhLDwGijhwWnyM
+Content-Type: application/json
+
+{
+    "receiverId":"1"
+}
+
+################################
+get http://localhost:5000/api/conversation/conversations
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjEiLCJpYXQiOjE2NDIxNjM3Mjl9.f-FWbrQOZCGrYnBIyEf4-iy3MlOZCXCjGULmVzvRnLQ
+
+
+################################
+get http://localhost:5000/api/conversation/getall
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjEiLCJpYXQiOjE2NDIxNjM3Mjl9.f-FWbrQOZCGrYnBIyEf4-iy3MlOZCXCjGULmVzvRnLQ
+
+################################
+post http://localhost:5000/api/message/add
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjEiLCJpYXQiOjE2NDIxNjM3Mjl9.f-FWbrQOZCGrYnBIyEf4-iy3MlOZCXCjGULmVzvRnLQ
+Content-Type: application/json
+
+{
+    "ConversationId":"61e16f625f96dbec8d40110f",
+    "text":"first text"
+}
+
+################################
+get http://localhost:5000/api/message/61e16f625f96dbec8d40110f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjA1MDkiLCJpYXQiOjE2NDIyMjI1Nzl9.gj8PM6WJAXCRoVZcOc8-odQXBnO_v5uafD64QI9r5As
+
+
+################################ 1
+get http://localhost:5000/api/conversation/room
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwaG9uZSI6IjEiLCJpYXQiOjE2NDIyMTYyMzZ9.7vFLPlAyoqN-N4cBAOtq_AqzPw9u_7dEVDJOh6xi9vw
+Content-Type: application/json
+
+{
+    "receiverId":"2"
+}
